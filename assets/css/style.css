@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300|Shadows+Into+Light');
+
+section {
+  position: relative;
+}
+
+.font-joe {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.font-sha {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+#main {
+  background-image: url('../images/main-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 650px;
+  background-color: #344074;
+  position: relative;
+}
+
+.waves {
+  background-image: url('../images/white-wave-lg.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 100px;
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  background-position: bottom;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.m-top-s {
+  margin-top:20px;
+}
+
+.m-top-m {
+  margin-top:40px;
+}
+
+.p-top-m {
+  padding-top:40px;
+}

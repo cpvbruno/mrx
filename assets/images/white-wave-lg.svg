@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 1200 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Hifi-+-Graphics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1200-wave" transform="translate(0.000000, -750.000000)" fill="#FFFFFF">
+            <path d="M0,750 L1200,750 L1200,774 C1200,774 1101.81089,785.618502 973.572443,782.757813 C770.469419,778.227076 483.864702,761.347656 298.585227,761.347656 C200.849432,761.347656 0,774 0,774 L0,750 Z" id="white-wave-1200" transform="translate(600.000000, 766.605493) scale(1, -1) translate(-600.000000, -766.605493) "></path>
+        </g>
+    </g>
+</svg>
