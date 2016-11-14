@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300|Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Cherry+Swash:700|Codystar:300');
 
 body {
   background-color: #344074;
@@ -12,6 +13,10 @@ section {
 footer {
   background-color: #FF9554;
   height: 300px;
+}
+
+.color-one {
+  color: #FF9554;
 }
 
 .d-block {
@@ -55,6 +60,14 @@ footer {
 
 .font-sha {
   font-family: 'Shadows Into Light', cursive;
+}
+
+.font-cherry {
+  font-family: 'Cherry Swash', cursive;
+}
+
+.font-star {
+  font-family: 'Codystar', cursive;
 }
 
 #main {
