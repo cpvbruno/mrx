@@ -13,5 +13,7 @@ function routes($routeProvider) {
 }
 
 function HomeController($location, helperService, $cookies, $window,$http) {
+  var vm = this;
 
+  vm.nav = helperService.linkOptions;
 }
