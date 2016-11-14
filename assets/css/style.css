@@ -9,6 +9,29 @@ section {
   background-color: white;
 }
 
+footer {
+  background-color: #FF9554;
+  height: 300px;
+}
+
+.d-block {
+  display: block;
+}
+
+.portifolio-card {
+  background-color: #CCC;
+  color: black;
+  min-height: 300px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition:linear all 0.2s;
+}
+
+.portifolio-card:hover {
+  box-shadow: -10px 8px 27px 1px rgba(0, 0, 0, 0.29);
+  transition:linear all 0.2s;
+}
+
 .navbar-brand img {
   width: 259px;
 }
