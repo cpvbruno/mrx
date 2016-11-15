@@ -38,10 +38,10 @@ footer {
 }
 
 .navbar-brand img {
-  width: 259px;
+  width: 168px;
 }
 .nav.navbar-right {
-  margin-top: 22px;
+  margin-top: 12px;
   color:white;
 }
 .navbar-default .navbar-nav>li>a {
@@ -71,10 +71,10 @@ footer {
 }
 
 #main {
-  background-image: url('../images/main-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 650px;
+  background-image: url('../images/pattern.png');
+  background-repeat: repeat;
+  /*background-position: center center;*/
+  height: 707px;
   background-color: #344074;
   position: relative;
   color: white;
