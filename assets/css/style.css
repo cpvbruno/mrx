@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300|Shadows+Into+Light');
 @import url('https://fonts.googleapis.com/css?family=Cherry+Swash:700|Codystar:300');
-body {
-    background-color: #344074;
+body, .mobile-pattern {
+    background-color: #674D90;
 }
 
 section {
@@ -25,16 +25,27 @@ footer {
     transition: linear all 0.2s;
 }
 
+.contact-card {
+    background: white;
+    padding: 12px;
+    border-radius: 3px;
+    box-shadow: -7px 8px 22px -5px rgba(0, 0, 0, 0.3);
+}
+
+.p-relative {
+position: relative;
+}
+
+.prevent-overlay {
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
 .navbar-fixed {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100;White+to+Transparent */
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%) !important;
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%) !important;
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%) !important;
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff', GradientType=0) !important;
-    /* IE6-9 */
+    background-color: #674D90 !important;
     position: fixed !important;
     top: 0px;
     left: 0px;
@@ -45,12 +56,14 @@ footer {
     transition: linear all 0.2s !important;
 }
 
-.navbar-fixed .navbar-default .navbar-nav>li>a {
+
+/*.navbar-fixed .navbar-default .navbar-nav>li>a {
   color: #384376;
 }
+*/
 
 .no-padding {
-  padding: 0px !important;
+    padding: 0px !important;
 }
 
 .color-one {
@@ -58,11 +71,15 @@ footer {
 }
 
 .color-two {
-    color: #344074;
+    color: #674D90;
+}
+
+.color-base {
+  color:white;
 }
 
 .divisor-right {
-  border-right: 1px solid #eee;
+    border-right: 1px solid #eee;
 }
 
 .d-block {
@@ -121,12 +138,17 @@ footer {
     font-family: 'Codystar', cursive;
 }
 
+.mobile-pattern {
+    background-image: url('../images/pattern.png');
+    background-repeat: repeat;
+}
+
 #main {
     background-image: url('../images/pattern.png');
     background-repeat: repeat;
     /*background-position: center center;*/
     height: 707px;
-    background-color: #344074;
+    background-color: #674D90;
     position: relative;
     color: white;
 }
@@ -160,46 +182,37 @@ footer {
 }
 
 @media screen and (max-width:800px) {
-  .navbar-toggle.collapsed, .navbar-toggle {
-      background: white ;
-      margin-right: 0px ;
-      margin-top: 22px ;
-  }
-
-  .navbar-toggle {
-    background: #CCC ;
-  }
-
-  div#bs-example-navbar-collapse-1 {
-      background: white ;
-      margin-top: 14px ;
-  }
-
-  div#bs-example-navbar-collapse-1 * {
-      color: #384376 ;
-  }
-
-  .divisor-right {
-    border:none;
-  }
-
-  video {
-    width: 100%;
-    background: white;
-    height: auto;
-  }
-
-  #main {
-    height: auto;
-    padding-bottom: 50px;
-  }
-
-  .mobile-w-all {
-    width: 100%;
-  }
-
-  .no-mobile-m {
-    margin:0px;
-  }
-
+    .navbar-toggle.collapsed, .navbar-toggle {
+        background: white;
+        margin-right: 0px;
+        margin-top: 22px;
+    }
+    .navbar-toggle {
+        background: #CCC;
+    }
+    div#bs-example-navbar-collapse-1 {
+        background: white;
+        margin-top: 14px;
+    }
+    div#bs-example-navbar-collapse-1 * {
+        color: #384376;
+    }
+    .divisor-right {
+        border: none;
+    }
+    video {
+        width: 100%;
+        background: white;
+        height: auto;
+    }
+    #main {
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .mobile-w-all {
+        width: 100%;
+    }
+    .no-mobile-m {
+        margin: 0px;
+    }
 }
