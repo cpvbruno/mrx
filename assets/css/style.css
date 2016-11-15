@@ -158,3 +158,48 @@ footer {
 .p-top-m {
     padding-top: 40px;
 }
+
+@media screen and (max-width:800px) {
+  .navbar-toggle.collapsed, .navbar-toggle {
+      background: white ;
+      margin-right: 0px ;
+      margin-top: 22px ;
+  }
+
+  .navbar-toggle {
+    background: #CCC ;
+  }
+
+  div#bs-example-navbar-collapse-1 {
+      background: white ;
+      margin-top: 14px ;
+  }
+
+  div#bs-example-navbar-collapse-1 * {
+      color: #384376 ;
+  }
+
+  .divisor-right {
+    border:none;
+  }
+
+  video {
+    width: 100%;
+    background: white;
+    height: auto;
+  }
+
+  #main {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .mobile-w-all {
+    width: 100%;
+  }
+
+  .no-mobile-m {
+    margin:0px;
+  }
+
+}
