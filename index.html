@@ -32,7 +32,7 @@
 
 
 <body data-ng-controller="HomeController as Home">
-  
+
 
     <div data-ng-view></div>
 
@@ -43,6 +43,17 @@
     <script>
         $(document).ready(function() {
             new WOW().init();
+            $(window).scroll(function() {
+                console.log($(window).scrollTop())
+                if ($(window).scrollTop() > 180) {
+                    $('#navbar').addClass('navbar-fixed');
+                    $("a.navbar-brand img").attr("src","assets/images/pantalabs-logo-shadowned.png");
+                }
+                if ($(window).scrollTop() < 181) {
+                    $('#navbar').removeClass('navbar-fixed');
+                    //$("a.navbar-brand img").attr("src","assets/images/pantalabs-logo-shadowned.png");
+                }
+            });
         });
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

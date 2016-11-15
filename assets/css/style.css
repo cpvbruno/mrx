@@ -1,109 +1,160 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300|Shadows+Into+Light');
 @import url('https://fonts.googleapis.com/css?family=Cherry+Swash:700|Codystar:300');
-
 body {
-  background-color: #344074;
+    background-color: #344074;
 }
 
 section {
-  position: relative;
-  background-color: white;
+    position: relative;
+    background-color: white;
 }
 
 footer {
-  background-color: #FF9554;
-  height: 300px;
+    background-color: #FF9554;
+    height: 300px;
+}
+
+#navbar {
+    background-color: transparent;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 0px 0px 0px black;
+    transition: linear all 0.2s;
+}
+
+.navbar-fixed {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.8+0,0.8+100;White+to+Transparent */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%) !important;
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%) !important;
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%) !important;
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ccffffff', GradientType=0) !important;
+    /* IE6-9 */
+    position: fixed !important;
+    top: 0px;
+    left: 0px;
+    width: 100% !important;
+    z-index: 10 !important;
+    height: 68px;
+    box-shadow: 1px 1px 59px -17px black !important;
+    transition: linear all 0.2s !important;
+}
+
+.navbar-fixed .navbar-default .navbar-nav>li>a {
+  color: #384376;
+}
+
+.no-padding {
+  padding: 0px !important;
 }
 
 .color-one {
-  color: #FF9554;
+    color: #FF9554;
+}
+
+.color-two {
+    color: #344074;
+}
+
+.divisor-right {
+  border-right: 1px solid #eee;
 }
 
 .d-block {
-  display: block;
+    display: block;
 }
 
 .portifolio-card {
-  background-color: #CCC;
-  color: black;
-  min-height: 300px;
-  cursor: pointer;
-  border-radius: 3px;
-  transition:linear all 0.2s;
+    background-color: #CCC;
+    color: black;
+    min-height: 300px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: linear all 0.2s;
 }
 
 .portifolio-card:hover {
-  box-shadow: -10px 8px 27px 1px rgba(0, 0, 0, 0.29);
-  transition:linear all 0.2s;
+    box-shadow: -10px 8px 27px 1px rgba(0, 0, 0, 0.29);
+    transition: linear all 0.2s;
 }
 
 .navbar-brand img {
-  width: 168px;
+    width: 168px;
 }
+
 .nav.navbar-right {
-  margin-top: 12px;
-  color:white;
+    margin-top: 8px;
+    color: white;
 }
+
 .navbar-default .navbar-nav>li>a {
-  color:white;
+    color: white;
 }
+
 .navbar-default .navbar-nav>li>a:hover {
-  color:#CCC;
+    color: #CCC;
 }
+
 .navbar-default {
-  background:none;
-  border:none;
+    background: none;
+    border: none;
 }
+
 .font-joe {
-  font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .font-sha {
-  font-family: 'Shadows Into Light', cursive;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 .font-cherry {
-  font-family: 'Cherry Swash', cursive;
+    font-family: 'Cherry Swash', cursive;
 }
 
 .font-star {
-  font-family: 'Codystar', cursive;
+    font-family: 'Codystar', cursive;
 }
 
 #main {
-  background-image: url('../images/pattern.png');
-  background-repeat: repeat;
-  /*background-position: center center;*/
-  height: 707px;
-  background-color: #344074;
-  position: relative;
-  color: white;
+    background-image: url('../images/pattern.png');
+    background-repeat: repeat;
+    /*background-position: center center;*/
+    height: 707px;
+    background-color: #344074;
+    position: relative;
+    color: white;
 }
 
 .waves {
-  background-image: url('../images/white-wave-lg.svg');
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  height: 100px;
-  position: absolute;
-  bottom: -2px;
-  left: 0px;
-  background-position: bottom;
+    background-image: url('../images/white-wave-lg.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100px;
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    background-position: bottom;
 }
 
 .center {
-  text-align: center;
-  margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .m-top-s {
-  margin-top:20px;
+    margin-top: 20px;
 }
 
 .m-top-m {
-  margin-top:40px;
+    margin-top: 40px;
 }
 
 .p-top-m {
-  padding-top:40px;
+    padding-top: 40px;
 }
