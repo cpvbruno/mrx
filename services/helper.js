@@ -129,27 +129,27 @@ function helperService() {
 
   helper.linkOptions = [
 	  {
-      href: '#/home',
+      href: 'home',
       title: 'Início',
 			type: 0
     },
     {
-      href: '#/portifolio',
+      href: 'portifolio',
       title: 'Portifólio',
 			type: 0
     },
     {
-      href: '#/iniciativas',
+      href: 'initiatives',
       title: 'Iniciativas',
 			type: 0
     },
     {
-      href: '#/quem-somos',
+      href: 'aboutus',
       title: 'Quem Somos',
 			type: 0
     },
     {
-      href: '#/contato',
+      href: 'contact',
       title: 'Contato',
 			type: 0
     }

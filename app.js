@@ -5,7 +5,8 @@ angular
         'ngRoute',
         'ngCookies',
         'ngMask',
-        'ngMessages'
+        'ngMessages',
+        'duScroll'
     ])
     .config(routesConfig)
     .config(['$httpProvider', resetHeaders]);

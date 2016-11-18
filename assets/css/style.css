@@ -4,6 +4,10 @@ body, .mobile-pattern {
     background-color: #674D90;
 }
 
+a {
+  cursor: pointer;
+}
+
 section {
     position: relative;
     background-color: white;
@@ -24,12 +28,22 @@ footer {
     box-shadow: 0px 0px 0px 0px black;
     transition: linear all 0.2s;
 }
+#navbar2 {
+  display: none;
+  background-color: transparent;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0px 0px 0px 0px black;
+  transition: linear all 0.2s;
+}
 
 .contact-card {
     background: white;
     padding: 12px;
     border-radius: 3px;
-    box-shadow: -7px 8px 22px -5px rgba(0, 0, 0, 0.3);
 }
 
 .p-relative {
@@ -46,6 +60,7 @@ position: relative;
 
 .navbar-fixed {
     background-color: #674D90 !important;
+    display: block !important;
     position: fixed !important;
     top: 0px;
     left: 0px;
@@ -61,6 +76,10 @@ position: relative;
   color: #384376;
 }
 */
+
+.t-a-center {
+  text-align: center;
+}
 
 .no-padding {
     padding: 0px !important;
@@ -181,6 +200,17 @@ position: relative;
     padding-top: 40px;
 }
 
+footer {
+  min-height: 350px;
+  background-color: #F59058;
+}
+
+@media screen and (min-width:800px) {
+  .navbar-brand {
+    margin-top: -6px;
+  }
+}
+
 @media screen and (max-width:800px) {
     .navbar-toggle.collapsed, .navbar-toggle {
         background: white;
@@ -214,5 +244,11 @@ position: relative;
     }
     .no-mobile-m {
         margin: 0px;
+    }
+    .s-hide {
+      display: none;
+    }
+    .s-no-padding {
+      padding:0px;
     }
 }

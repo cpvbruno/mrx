@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <TITLE></TITLE>
+    <TITLE>Panta LABS</TITLE>
     <META NAME="DESCRIPTION" CONTENT="">
     <META NAME="ABSTRACT" CONTENT="">
     <META NAME="KEYWORDS" CONTENT="">
@@ -26,12 +26,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/css/animate.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link href="assets/css/style.css?v=1" type="text/css" rel="stylesheet" media="screen,projection" />
 
 </head>
 
 
-<body data-ng-controller="HomeController as Home">
+<body data-ng-controller="HomeController as Home" id="home">
 
 
     <div data-ng-view></div>
@@ -47,11 +48,9 @@
                 console.log($(window).scrollTop())
                 if ($(window).scrollTop() > 180) {
                     $('#navbar').addClass('navbar-fixed');
-                    $("a.navbar-brand img").attr("src","assets/images/pantalabs-logo-shadowned.png");
                 }
                 if ($(window).scrollTop() < 181) {
                     $('#navbar').removeClass('navbar-fixed');
-                    $("a.navbar-brand img").attr("src","assets/images/pantalabs-logo-simple-white-label.png");
                 }
             });
         });
@@ -63,6 +62,7 @@
     <script src="//code.angularjs.org/1.5.5/angular-cookies.min.js?v=5"></script>
     <script src="assets/js/ngMask.min.js?v=5"></script>
     <script src="assets/js/wow.js?v=5"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.js"></script>
     <script src="./app.js"></script>
     <script src="controllers/home.js"></script>
     <script src="services/helper.js"></script>
